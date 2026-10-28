@@ -1,3 +1,32 @@
+CeladonCity_Gym_Text_MauroFirstTalk::
+    .string "(Mauro está sentado frente a su monitor,\n"
+    .string "mirando al vacío. Tiene unos audífonos\l"
+    .string "puestos y un café frío al lado.)\p"
+    .string "MAURO: …\p"
+    .string "(Tiene el cliente de Lineage 2 Essence\n"
+    .string "abierto en auto-hunt farmeando L-Coins.\l"
+    .string "Está completamente AFK.)$"
+
+CeladonCity_Gym_Text_MauroSecondTalk::
+    .string "(Mauro se quita un audífono con fastidio.)\p"
+    .string "MAURO: Ah, verga… ¿todavía estás aquí\n"
+    .string "parado, chamo?\p"
+    .string "Estoy con el auto-hunt prendido farmeando\n"
+    .string "en Sel Mahum, mano, no me desconcentres que\l"
+    .string "me llega un PK y me tira al piso.\p"
+    .string "Toma tu medalla, toma la MT, llévate\n"
+    .string "todo y no me toques el mouse.\p"
+    .string "Chao.$"
+
+CeladonCity_Gym_Text_ReceivedRainbowBadge::
+    .string "{PLAYER} received the RAINBOWBADGE\n"
+    .string "from MAURO!$"
+
+CeladonCity_Gym_Text_MauroAfterBadge::
+    .string "(Mauro se vuelve a poner los audífonos\n"
+    .string "y se queda mirando cómo su personaje\l"
+    .string "farmea solo en pantalla.)$"
+
 CeladonCity_Gym_Text_ErikaIntro::
     .string "Hello…\n"
     .string "Lovely weather, isn't it?\l"
@@ -36,7 +65,7 @@ CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis::
 
 CeladonCity_Gym_Text_ReceivedTM19FromErika::
     .string "{PLAYER} received TM19\n"
-    .string "from ERIKA.$"
+    .string "from MAURO.$"
 
 CeladonCity_Gym_Text_ExplainTM19::
     .string "TM19 contains GIGA DRAIN.\p"
@@ -46,7 +75,8 @@ CeladonCity_Gym_Text_ExplainTM19::
     .string "wonderful move?$"
 
 CeladonCity_Gym_Text_ShouldMakeRoomForThis::
-    .string "You should make room for this.$"
+    .string "MAURO: Mano, tienes la mochila llena.\n"
+    .string "Bota cualquier vaina y vuelve.$"
 
 CeladonCity_Gym_Text_KayIntro::
     .string "I should tell you about this GYM.\p"
@@ -140,13 +170,13 @@ CeladonCity_Gym_Text_MaryPostBattle::
 
 CeladonCity_Gym_Text_GymStatue::
     .string "CELADON POKéMON GYM\n"
-    .string "LEADER: ERIKA\p"
+    .string "LEADER: MAURO\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
 CeladonCity_Gym_Text_GymStatuePlayerWon::
     .string "CELADON POKéMON GYM\n"
-    .string "LEADER: ERIKA\p"
+    .string "LEADER: MAURO\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
 

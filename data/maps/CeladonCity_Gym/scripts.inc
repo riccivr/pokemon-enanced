@@ -2,35 +2,50 @@ CeladonCity_Gym_MapScripts::
 	.byte 0
 
 CeladonCity_Gym_EventScript_Erika::
-	famechecker FAMECHECKER_ERIKA, FCPICKSTATE_COLORED, UpdatePickStateFromSpecialVar8005
-	trainerbattle_single TRAINER_LEADER_ERIKA, CeladonCity_Gym_Text_ErikaIntro, CeladonCity_Gym_Text_ErikaDefeat, CeladonCity_Gym_EventScript_DefeatedErika, NO_MUSIC
-	goto_if_unset FLAG_GOT_TM19_FROM_ERIKA, CeladonCity_Gym_EventScript_GiveTM19
-	famechecker FAMECHECKER_ERIKA, 4
-	msgbox CeladonCity_Gym_Text_ErikaPostBattle
+	lock
+	faceplayer
+	goto_if_set FLAG_DEFEATED_ERIKA, CeladonCity_Gym_EventScript_MauroAFKPostBadge
+	goto_if_set FLAG_TEMP_1, CeladonCity_Gym_EventScript_MauroSecondTalk
+	setflag FLAG_TEMP_1
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Gym_Text_MauroFirstTalk
 	release
 	end
 
-CeladonCity_Gym_EventScript_DefeatedErika::
-	famechecker FAMECHECKER_ERIKA, 1
-	clearflag FLAG_HIDE_FAME_CHECKER_ERIKA_JOURNALS
+CeladonCity_Gym_EventScript_MauroSecondTalk::
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Gym_Text_MauroSecondTalk
+	playfanfare MUS_OBTAIN_BADGE
+	message CeladonCity_Gym_Text_ReceivedRainbowBadge
+	waitmessage
+	waitfanfare
 	setflag FLAG_DEFEATED_ERIKA
 	setflag FLAG_BADGE04_GET
 	set_gym_trainers 4
+	famechecker FAMECHECKER_ERIKA, 1
+	clearflag FLAG_HIDE_FAME_CHECKER_ERIKA_JOURNALS
 	goto CeladonCity_Gym_EventScript_GiveTM19
 	end
 
 CeladonCity_Gym_EventScript_GiveTM19::
-	msgbox CeladonCity_Gym_Text_ExplainRainbowBadgeTakeThis
 	checkitemspace ITEM_TM19
 	goto_if_eq VAR_RESULT, FALSE, CeladonCity_Gym_EventScript_NoRoomForTM19
 	giveitem_msg CeladonCity_Gym_Text_ReceivedTM19FromErika, ITEM_TM19
 	setflag FLAG_GOT_TM19_FROM_ERIKA
-	msgbox CeladonCity_Gym_Text_ExplainTM19
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Gym_Text_MauroAfterBadge
 	release
 	end
 
 CeladonCity_Gym_EventScript_NoRoomForTM19::
 	msgbox CeladonCity_Gym_Text_ShouldMakeRoomForThis
+	release
+	end
+
+CeladonCity_Gym_EventScript_MauroAFKPostBadge::
+	goto_if_unset FLAG_GOT_TM19_FROM_ERIKA, CeladonCity_Gym_EventScript_GiveTM19
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox CeladonCity_Gym_Text_MauroAfterBadge
 	release
 	end
 
