@@ -73,18 +73,20 @@ PalletTown_ProfessorOaksLab_Text_RivalGramps::
     .string "{RIVAL}: ¡Frankie!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor::
-    .string "{RIVAL}: ¡Casi se me olvida!\n"
-    .string "¿Para qué me llamaste?$"
+    .string "{RIVAL}: ¿Para qué me llamaste, Frankie?\n"
+    .string "Estaba viendo un tutorial en YouTube\l"
+    .string "para arreglar la rueda de la grúa.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
     .string "{RIVAL}: Vale, Frankie.\n"
-    .string "Déjamelo a mí.$"
+    .string "A ver si con esto consigo no manquear tanto\l"
+    .string "con este bicho inútil.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
-    .string "{PLAYER}, no te flipes.\n"
-    .string "Le voy a pedir el mapa a mi hermana\l"
-    .string "y le diré que a ti no te dé nada.\p"
-    .string "¡Hahaha! ¡Nos vemos!$"
+    .string "{PLAYER}, me piro a Ciudad Verde a ver si\n"
+    .string "consigo repuestos para la grúa.\p"
+    .string "Y le voy a decir a mi hermana que ni de coña\n"
+    .string "te pase el mapa. ¡Búscate la vida, chiquillo!$"
 
 PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
     .string "FRANKIE: Shut up, Kyrales, stop crying\n"
@@ -152,78 +154,67 @@ PalletTown_ProfessorOaksLab_Text_OakBattleMonForItToGrow::
     .string "It has to battle for it to grow.$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveSomethingForMe::
-    .string "OAK: Oh, {PLAYER}!\n"
-    .string "How is my old POKéMON?\p"
-    .string "Well, it seems to be growing more\n"
-    .string "attached to you.\p"
-    .string "You must be talented as a POKéMON\n"
-    .string "TRAINER.\p"
-    .string "What's that?\n"
-    .string "You have something for me?$"
+    .string "FRANKIE: Ey, {PLAYER}!\n"
+    .string "You back from Viridian already?\p"
+    .string "Tell me you have what I need.\n"
+    .string "I am shaking, need smoke break.$"
 
 PalletTown_ProfessorOaksLab_Text_DeliveredOaksParcel::
-    .string "{PLAYER} delivered OAK'S PARCEL.$"
+    .string "{PLAYER} delivered FRANKIE'S PACKAGE\n"
+    .string "with cigarettes and USB forum dumps.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCustomBallIOrdered::
-    .string "Ah! \n"
-    .string "It's the custom POKé BALL!\p"
-    .string "I had it on order.\n"
-    .string "Thank you!$"
+    .string "FRANKIE: Ah! Beautiful!\n"
+    .string "My Marlboro Reds and Russian 4 AM\l"
+    .string "Essence leak database!\p"
+    .string "Very good job, {PLAYER}. You are true\n"
+    .string "clan soldier. Respect.$"
 
 PalletTown_ProfessorOaksLab_Text_OakHaveRequestForYouTwo::
-    .string "OAK: Oh, right!\n"
-    .string "I have a request for you two.$"
+    .string "FRANKIE: Kyrales, shut mouth and listen.\n"
+    .string "Clan leader giving new orders.$"
 
 PalletTown_ProfessorOaksLab_Text_OakPokedexOnDesk::
-    .string "On the desk there is my invention,\n"
-    .string "the POKéDEX!\p"
-    .string "It automatically records data on\n"
-    .string "POKéMON you've seen or caught.\p"
-    .string "It's a high-tech encyclopedia!$"
+    .string "Look on desk. I prepared ultimate tool:\n"
+    .string "the EPIDEMIC STRATEGY GUIDE!\p"
+    .string "Idiots call it POKéDEX, but it is\n"
+    .string "database to record mob drops, spawn\l"
+    .string "timers, and auto-hunt efficiency!$"
 
 PalletTown_ProfessorOaksLab_Text_OakTakeTheseWithYou::
-    .string "OAK: {PLAYER} and {RIVAL}.\n"
-    .string "Take these with you.$"
+    .string "FRANKIE: {PLAYER}, Kyrales.\n"
+    .string "Take one guide each.$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedPokedexFromOak::
     .string "{PLAYER} received the POKéDEX\n"
-    .string "from PROF. OAK.$"
+    .string "from FRANKIEDECKARD.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCatchMonsForDataTakeThese::
-    .string "OAK: You can't get detailed data\n"
-    .string "on POKéMON by just seeing them.\p"
-    .string "You must catch them to obtain\n"
-    .string "complete data.\p"
-    .string "So, here are some tools for\n"
-    .string "catching wild POKéMON.$"
+    .string "FRANKIE: Listen to me.\n"
+    .string "You cannot conquer server with only\l"
+    .string "one trash mob.\p"
+    .string "You must catch more to farm clan adena.\n"
+    .string "Take these balls.$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedFivePokeBalls::
     .string "{PLAYER} received five POKé BALLS.$"
 
 PalletTown_ProfessorOaksLab_Text_OakExplainCatching::
-    .string "When a wild POKéMON appears,\n"
-    .string "it's fair game.\p"
-    .string "Just throw a POKé BALL at it and\n"
-    .string "try to catch it!\p"
-    .string "This won't always work, however.\p"
-    .string "A healthy POKéMON can escape.\n"
-    .string "You have to be lucky!$"
+    .string "FRANKIE: When wild creature appear,\n"
+    .string "throw ball and pray to RNG gods.\p"
+    .string "If ball fail, do not complain to me.\n"
+    .string "Blame server lag, packet loss, or\l"
+    .string "shitty NCSoft netcode.$"
 
 PalletTown_ProfessorOaksLab_Text_OakCompleteMonGuideWasMyDream::
-    .string "To make a complete guide on all\n"
-    .string "the POKéMON in the world…\p"
-    .string "That was my dream!\p"
-    .string "But, I'm too old.\n"
-    .string "I can't get the job done.\p"
-    .string "So, I want you two to fulfill my\n"
-    .string "dream for me.\p"
-    .string "Get moving, you two.\p"
-    .string "This is a great undertaking in\n"
-    .string "POKéMON history!$"
+    .string "FRANKIE: Full server monopoly and\n"
+    .string "castle ownership… that is my dream!\p"
+    .string "Now move your asses!\n"
+    .string "Clan Epidemic does not sleep!$"
 
 PalletTown_ProfessorOaksLab_Text_OakMonsAroundWorldWait::
-    .string "POKéMON around the world wait for\n"
-    .string "you, {PLAYER}!$"
+    .string "FRANKIE: Mobs around the server wait\n"
+    .string "for you, {PLAYER}! Turn auto-hunt on!$"
 
 PalletTown_ProfessorOaksLab_Text_OakAddedNothingToPokedex::
     .string "Ah, {PLAYER}!\n"
