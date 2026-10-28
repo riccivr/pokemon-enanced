@@ -360,6 +360,10 @@ int AsmFile::ReadBraille(unsigned char* s)
         { ')', BRAILLE_CHAR_PAREN },
         { '\'', BRAILLE_CHAR_APOSTROPHE },
         { '#', BRAILLE_CHAR_NUMBER },
+        { '=', BRAILLE_CHAR_EQUAL },
+        { '*', BRAILLE_CHAR_ASTERISK },
+        { '@', BRAILLE_CHAR_A_DIAERESIS },
+        { '^', BRAILLE_CHAR_U_DIAERESIS },
         { '$', EOS },
     };
 

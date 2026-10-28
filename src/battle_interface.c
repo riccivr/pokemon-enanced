@@ -756,16 +756,28 @@ void InitBattlerHealthboxCoords(u8 battler)
     UpdateSpritePos(gHealthboxSpriteIds[battler], x, y);
 }
 
+#if GAME_LANGUAGE == LANGUAGE_SPANISH || GAME_LANGUAGE == LANGUAGE_GERMAN
+    #define TEXT_LV _("{LV_3}")
+#else
+    #define TEXT_LV _("{LV_2}")
+#endif
+
 static void UpdateLvlInHealthbox(u8 healthboxSpriteId, u8 lvl)
 {
     u32 windowId, spriteTileNum;
     u8 *windowTileData;
-    u8 text[16] = _("{LV_2}");
+    u8 text[16] = TEXT_LV;
     u32 xPos;
     u8 *objVram;
 
+#if GAME_LANGUAGE == LANGUAGE_ENGLISH
     objVram = ConvertIntToDecimalStringN(text + 2, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
     xPos = 5 * (3 - (objVram - (text + 2)));
+#else
+    u8 *txtPtr = text + StringLength(text);
+    objVram = ConvertIntToDecimalStringN(txtPtr, lvl, STR_CONV_MODE_LEFT_ALIGN, 3);
+    xPos = 5 * (3 - (objVram - txtPtr));
+#endif
 
     windowTileData = AddTextPrinterAndCreateWindowOnHealthbox(text, xPos, 3, &windowId);
     spriteTileNum = gSprites[healthboxSpriteId].oam.tileNum * TILE_SIZE_4BPP;
@@ -1077,6 +1089,7 @@ void SwapHpBarsWithHpText(void)
 #define sSpeed                  data[3]
 #define sIsEmptyBall            data[7]
 
+#if GAME_LANGUAGE == LANGUAGE_ENGLISH
 u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, bool8 isSwitchingMons, bool8 isBattleStart)
 {
     bool8 isOpponent;
@@ -1247,6 +1260,198 @@ u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, 
     PlaySE12WithPanning(SE_BALL_TRAY_ENTER, 0);
     return taskId;
 }
+#else
+u8 CreatePartyStatusSummarySprites(u8 battlerId, struct HpAndStatus *partyInfo, bool8 isSwitchingMons, bool8 isBattleStart)
+{
+    bool8 isOpponent;
+    s16 x, y, x2, speed;
+    s32 i, j, var;
+    u8 summaryBarSpriteId;
+    u8 ballIconSpritesIds[PARTY_SIZE];
+    u8 taskId;
+
+     if (!isSwitchingMons || GetBattlerPosition(battlerId) != B_POSITION_OPPONENT_RIGHT)
+    {
+        if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
+        {
+            isOpponent = FALSE;
+            x = 136, y = 96;
+            x2 = 100;
+            speed = -5;
+        }
+        else
+        {
+            isOpponent = TRUE;
+
+            if (!isSwitchingMons || !IsDoubleBattle())
+                x = 104, y = 40;
+            else
+                x = 104, y = 16;
+
+            x2 = -100;
+            speed = 5;
+        }
+    }
+    else
+    {
+        isOpponent = TRUE;
+        x = 104, y = 40;
+        x2 = -100;
+        speed = 5;
+    }
+
+    LoadCompressedSpriteSheetUsingHeap(&sPartySummaryBarSpriteSheets[isOpponent]);
+    LoadSpriteSheet(&sPartySummaryBallSpriteSheets[isOpponent]);
+    LoadSpritePalette(&sPartySummaryBarSpritePals[isOpponent]);
+    LoadSpritePalette(&sPartySummaryBallSpritePals[isOpponent]);
+
+    summaryBarSpriteId = CreateSprite(&sPartySummaryBarSpriteTemplates[isOpponent], x, y, 10);
+    SetSubspriteTables(&gSprites[summaryBarSpriteId], sStatusSummaryBar_SubspriteTable_Enter);
+    gSprites[summaryBarSpriteId].x2 = x2;
+    gSprites[summaryBarSpriteId].sEnterSpeed = speed;
+
+    if (isOpponent)
+    {
+        gSprites[summaryBarSpriteId].x -= 96;
+        gSprites[summaryBarSpriteId].oam.matrixNum = ST_OAM_HFLIP;
+    }
+    else
+    {
+        gSprites[summaryBarSpriteId].x += 96;
+    }
+    for (i = 0; i < PARTY_SIZE; i++)
+    {
+        ballIconSpritesIds[i] = CreateSpriteAtEnd(&sPartySummaryBallSpriteTemplates[isOpponent], x, y - 4, 9);
+
+        if (!isBattleStart)
+            gSprites[ballIconSpritesIds[i]].callback = SpriteCB_PartySummaryBall_OnSwitchout;
+
+        if (!isOpponent)
+        {
+            gSprites[ballIconSpritesIds[i]].x2 = 0;
+            gSprites[ballIconSpritesIds[i]].y2 = 0;
+        }
+
+        gSprites[ballIconSpritesIds[i]].sSummaryBarSpriteId = summaryBarSpriteId;
+
+        if (!isOpponent)
+        {
+            gSprites[ballIconSpritesIds[i]].x += 10 * i + 24;
+            gSprites[ballIconSpritesIds[i]].sTimer = i * 7 + 10;
+            gSprites[ballIconSpritesIds[i]].x2 = 120;
+        }
+        else
+        {
+            gSprites[ballIconSpritesIds[i]].x -= 10 * (5 - i) + 24;
+            gSprites[ballIconSpritesIds[i]].sTimer = (6 - i) * 7 + 10;
+            gSprites[ballIconSpritesIds[i]].x2 = -120;
+        }
+
+        gSprites[ballIconSpritesIds[i]].sIsOpponent = isOpponent;
+    }
+
+    if (GetBattlerSide(battlerId) == B_SIDE_PLAYER)
+    {
+        if (gBattleTypeFlags & BATTLE_TYPE_MULTI)
+        {
+            for (i = 0; i < PARTY_SIZE; i++)
+            {
+                if (partyInfo[i].hp == HP_EMPTY_SLOT)
+                {
+                    gSprites[ballIconSpritesIds[i]].oam.tileNum += 1;
+                    gSprites[ballIconSpritesIds[i]].sIsEmptyBall = TRUE;
+                }
+                else if (partyInfo[i].hp == 0)
+                {
+                    gSprites[ballIconSpritesIds[i]].oam.tileNum += 3;
+                }
+                else if (partyInfo[i].status != STATUS1_NONE)
+                {
+                    gSprites[ballIconSpritesIds[i]].oam.tileNum += 2;
+                }
+            }
+        }
+        else
+        {
+            for (i = 0, var = PARTY_SIZE - 1, j = 0; j < PARTY_SIZE; j++)
+            {
+                if (partyInfo[j].hp == HP_EMPTY_SLOT)
+                {
+                    gSprites[ballIconSpritesIds[var]].oam.tileNum += 1;
+                    gSprites[ballIconSpritesIds[var]].sIsEmptyBall = TRUE;
+                    var--;
+                    continue;
+                }
+                else if (partyInfo[j].hp == 0)
+                {
+                    gSprites[ballIconSpritesIds[i]].oam.tileNum += 3;
+                }
+                else if (partyInfo[j].status != STATUS1_NONE)
+                {
+                    gSprites[ballIconSpritesIds[i]].oam.tileNum += 2;
+                }
+                i++;
+            }
+        }
+    }
+    else
+    {
+        if ((gBattleTypeFlags & BATTLE_TYPE_MULTI))
+        {
+            for (var = PARTY_SIZE - 1, i = 0; i < PARTY_SIZE; i++)
+            {
+                if (partyInfo[i].hp == HP_EMPTY_SLOT)
+                {
+                    gSprites[ballIconSpritesIds[var]].oam.tileNum += 1;
+                    gSprites[ballIconSpritesIds[var]].sIsEmptyBall = TRUE;
+                }
+                else if (partyInfo[i].hp == 0)
+                {
+                    gSprites[ballIconSpritesIds[var]].oam.tileNum += 3;
+                }
+                else if (partyInfo[i].status != STATUS1_NONE)
+                {
+                    gSprites[ballIconSpritesIds[var]].oam.tileNum += 2;
+                }
+                var--;
+            }
+        }
+        else
+        {
+            for (var = PARTY_SIZE - 1, i = 0, j = 0; j < PARTY_SIZE; j++)
+            {
+                if (partyInfo[j].hp == HP_EMPTY_SLOT)
+                {
+                    gSprites[ballIconSpritesIds[i]].oam.tileNum += 1;
+                    gSprites[ballIconSpritesIds[i]].sIsEmptyBall = TRUE;
+                    i++;
+                    continue;
+                }
+                else if (partyInfo[j].hp == 0)
+                {
+                    gSprites[ballIconSpritesIds[var]].oam.tileNum += 3;
+                }
+                else if (partyInfo[j].status != STATUS1_NONE)
+                {
+                    gSprites[ballIconSpritesIds[var]].oam.tileNum += 2;
+                }
+                var--;
+            }
+        }
+    }
+
+    taskId = CreateTask(TaskDummy, 5);
+    gTasks[taskId].tBattler = battlerId;
+    gTasks[taskId].tSummaryBarSpriteId = summaryBarSpriteId;
+
+    for (i = 0; i < PARTY_SIZE; i++)
+        gTasks[taskId].tBallIconSpriteId(i) = ballIconSpritesIds[i];
+
+    gTasks[taskId].tIsBattleStart = isBattleStart;
+    PlaySE12WithPanning(SE_BALL_TRAY_ENTER, 0);
+    return taskId;
+}
+#endif
 
 void Task_HidePartyStatusSummary(u8 taskId)
 {

@@ -1,87 +1,87 @@
 SixIsland_RuinValley_Text_CantFigureOutHowToGetInside::
-    .string "I can't figure out how I'm supposed\n"
-    .string "to get inside.$"
+    .string "No tengo ni idea de cómo puedo\n"
+    .string "entrar.$"
 
 SixIsland_RuinValley_Text_IFoundThisPlace::
-    .string "Let me tell you, I found this\n"
-    .string "place.\p"
-    .string "Don't look so envious, will you?$"
+    .string "Para tu información, fui yo quien\n"
+    .string "encontró este lugar.\p"
+    .string "Tampoco es para que pongas\n"
+    .string "esa cara de envidia...$"
 
 SixIsland_RuinValley_Text_CheckDoorMoreThoroughly::
-    .string "The door doesn't budge at all.\n"
-    .string "Check it more thoroughly?$"
+    .string "La puerta no cede ni un milímetro.\n"
+    .string "¿Quieres examinarla un poco?$"
 
 SixIsland_RuinValley_Text_LeftDoorAlone::
-    .string "{PLAYER} left the door alone.$"
+    .string "{PLAYER} dejó tranquila la puerta.$"
 
 SixIsland_RuinValley_Text_SeveralDotsOnTheDoor::
-    .string "On closer inspection, there are\n"
-    .string "several dots on the door…$"
+    .string "Tras mirarla con más detenimiento,\n"
+    .string "vio que estaba punteada...$"
 
 SixIsland_RuinValley_Text_DoorIsOpen::
-    .string "The door is open.$"
+    .string "La puerta está abierta.$"
 
 SixIsland_RuinValley_Text_StanlyIntro::
-    .string "There appear to be many secrets\n"
-    .string "still unsolved in this world.$"
+    .string "Creo que en este mundo quedan\n"
+    .string "misterios por resolver.$"
 
 SixIsland_RuinValley_Text_StanlyDefeat::
-    .string "Hmm…$"
+    .string "Mmmm...$"
 
 SixIsland_RuinValley_Text_StanlyPostBattle::
-    .string "I suggest to you that you, too,\n"
-    .string "give a thought to the secrets and\l"
-    .string "mysteries of our world once a day.$"
+    .string "Creo que también deberías dedicar\n"
+    .string "un tiempo a pensar en la cantidad\l"
+    .string "de cosas que hay por averiguar.$"
 
 SixIsland_RuinValley_Text_FosterIntro::
-    .string "I'm curious, what compelled you to\n"
-    .string "come here?$"
+    .string "Oye, ¿qué te trae hasta aquí?$"
 
 SixIsland_RuinValley_Text_FosterDefeat::
-    .string "It's been so long since I battled,\n"
-    .string "my instincts are off.$"
+    .string "Llevo tanto sin luchar que no\n"
+    .string "tengo reflejos...$"
 
 SixIsland_RuinValley_Text_FosterPostBattle::
-    .string "There are several ruins on the\n"
-    .string "SEVII ISLANDS.\p"
-    .string "The majority of them date back\n"
-    .string "a long way.$"
+    .string "Hay varias ruinas en ARCHI7.\p"
+    .string "La mayoría datan de tiempos\n"
+    .string "inmemoriales.$"
 
 SixIsland_RuinValley_Text_LarryIntro::
-    .string "It's been said that there are\n"
-    .string "mysterious stones on this island.\p"
-    .string "I suspect it has something to do\n"
-    .string "with the ruins here.$"
+    .string "Dicen que hay misteriosas piedras\n"
+    .string "en esta isla.\p"
+    .string "Supongo que tendrán algo que ver\n"
+    .string "con las ruinas de aquí.$"
 
 SixIsland_RuinValley_Text_LarryDefeat::
-    .string "Oh, interesting.$"
+    .string "Eh... muy interesante.$"
 
 SixIsland_RuinValley_Text_LarryPostBattle::
-    .string "Those ruins over there…\p"
-    .string "I haven't had any luck in finding\n"
-    .string "how I can get inside.$"
+    .string "Las ruinas de ahí...\p"
+    .string "Son rarísimas, yo no he conseguido\n"
+    .string "entrar todavía.$"
 
 SixIsland_RuinValley_Text_DarylIntro::
-    .string "A battle with you, so high up!$"
+    .string "¿Luchar contigo?\n"
+    .string "¡Ahora mismo!$"
 
 SixIsland_RuinValley_Text_DarylDefeat::
-    .string "Oh, the heartbreak of losing so\n"
-    .string "easily to you!$"
+    .string "No soporto el sabor de la derrota\n"
+    .string "ante ti...$"
 
 SixIsland_RuinValley_Text_DarylPostBattle::
-    .string "Experience the joy of climbing!$"
+    .string "Deberías hacer escalada.$"
 
 SixIsland_RuinValley_Text_HectorIntro::
-    .string "I'm pretty familiar with the land\n"
-    .string "around these parts.$"
+    .string "Yo me conozco bien toda esta\n"
+    .string "zona.$"
 
 SixIsland_RuinValley_Text_HectorDefeat::
-    .string "You don't need to be so pushy.\n"
-    .string "I'll be happy to tell you.$"
+    .string "Tampoco es para ponerse así.\n"
+    .string "Puedes preguntarme lo que quieras.$"
 
 SixIsland_RuinValley_Text_HectorPostBattle::
-    .string "The door to the ruins…\n"
-    .string "It has these strange patterns\l"
-    .string "engraved on the outside.\p"
-    .string "I don't know what they mean,\n"
-    .string "though.$"
+    .string "La entrada a las ruinas...\n"
+    .string "Tiene unos dibujos extrañísimos\l"
+    .string "grabados.\p"
+    .string "Y no tengo ni idea de lo que\n"
+    .string "significan.$"

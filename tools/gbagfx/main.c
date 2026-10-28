@@ -350,18 +350,18 @@ void HandleJascToGbaPaletteCommand(char *inputPath, char *outputPath, int argc, 
     WriteGbaPalette(outputPath, &palette);
 }
 
-void HandleHalfWidthLatinFontToPngCommand(char *inputPath, char *outputPath, int argc UNUSED, char **argv UNUSED)
+void HandleLatinFontToPngCommand(char *inputPath, char *outputPath, int argc UNUSED, char **argv UNUSED)
 {
     struct Image image;
     image.tilemap.data.affine = NULL; // initialize to NULL to avoid issues in FreeImage
 
-    ReadHalfWidthLatinFont(inputPath, &image);
+    ReadLatinFont(inputPath, &image);
     WritePng(outputPath, &image);
 
     FreeImage(&image);
 }
 
-void HandlePngToHalfWidthLatinFontCommand(char *inputPath, char *outputPath, int argc UNUSED, char **argv UNUSED)
+void HandlePngToLatinFontCommand(char *inputPath, char *outputPath, int argc UNUSED, char **argv UNUSED)
 {
     struct Image image;
     image.tilemap.data.affine = NULL; // initialize to NULL to avoid issues in FreeImage
@@ -369,31 +369,7 @@ void HandlePngToHalfWidthLatinFontCommand(char *inputPath, char *outputPath, int
     image.bitDepth = 2;
 
     ReadPng(inputPath, &image);
-    WriteHalfWidthLatinFont(outputPath, &image);
-
-    FreeImage(&image);
-}
-
-void HandleFullWidthLatinFontToPngCommand(char *inputPath, char *outputPath, int argc UNUSED, char **argv UNUSED)
-{
-    struct Image image;
-    image.tilemap.data.affine = NULL; // initialize to NULL to avoid issues in FreeImage
-
-    ReadFullWidthLatinFont(inputPath, &image);
-    WritePng(outputPath, &image);
-
-    FreeImage(&image);
-}
-
-void HandlePngToFullWidthLatinFontCommand(char *inputPath, char *outputPath, int argc UNUSED, char **argv UNUSED)
-{
-    struct Image image;
-    image.tilemap.data.affine = NULL; // initialize to NULL to avoid issues in FreeImage
-
-    image.bitDepth = 2;
-
-    ReadPng(inputPath, &image);
-    WriteFullWidthLatinFont(outputPath, &image);
+    WriteLatinFont(outputPath, &image);
 
     FreeImage(&image);
 }
@@ -629,10 +605,8 @@ int main(int argc, char **argv)
         { "png", "pal", HandlePngToJascPaletteCommand },
         { "gbapal", "pal", HandleGbaToJascPaletteCommand },
         { "pal", "gbapal", HandleJascToGbaPaletteCommand },
-        { "hwlatfont", "png", HandleHalfWidthLatinFontToPngCommand },
-        { "png", "hwlatfont", HandlePngToHalfWidthLatinFontCommand },
-        { "fwlatfont", "png", HandleFullWidthLatinFontToPngCommand },
-        { "png", "fwlatfont", HandlePngToFullWidthLatinFontCommand },
+        { "latfont", "png", HandleLatinFontToPngCommand },
+        { "png", "latfont", HandlePngToLatinFontCommand },
         { "hwjpnfont", "png", HandleHalfwidthJapaneseFontToPngCommand },
         { "png", "hwjpnfont", HandlePngToHalfwidthJapaneseFontCommand },
         { "fwjpnfont", "png", HandleFullwidthJapaneseFontToPngCommand },

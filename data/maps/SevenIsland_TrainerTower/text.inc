@@ -1,34 +1,33 @@
 SevenIsland_TrainerTower_Text_DarioIntro::
-    .string "I sensed your approach.$"
+    .string "He notado que te acercabas.$"
 
 SevenIsland_TrainerTower_Text_DarioDefeat::
-    .string "Give up…$"
+    .string "Me rindo...$"
 
 SevenIsland_TrainerTower_Text_DarioPostBattle::
-    .string "In your future, I sense that you\n"
-    .string "will meet many others.\p"
-    .string "I think you will be linked to each\n"
-    .string "other by a strange power.$"
+    .string "Siento que te vas a encontrar\n"
+    .string "con mucha gente.\p"
+    .string "Establecerás cierta conexión\n"
+    .string "mediante una extraña fuerza.$"
 
 SevenIsland_TrainerTower_Text_RodetteIntro::
-    .string "Somewhere on this island, peculiar\n"
-    .string "POKéMON are sleeping.$"
+    .string "En alguna parte de esta isla,\n"
+    .string "hay extraños POKéMON durmiendo.$"
 
 SevenIsland_TrainerTower_Text_RodetteDefeat::
-    .string "What an amazing TRAINER!$"
+    .string "¡Tú sí que sabes entrenar POKéMON!$"
 
 SevenIsland_TrainerTower_Text_RodettePostBattle::
-    .string "Somewhere on this island, peculiar\n"
-    .string "POKéMON are sleeping.\p"
-    .string "Could it be that they're waiting\n"
-    .string "for you?$"
+    .string "En alguna parte de esta isla,\n"
+    .string "hay extraños POKéMON durmiendo.\p"
+    .string "¿Te estarán esperando?$"
 
 SevenIsland_TrainerTower_Text_TrainerTowerSign::
-    .string "TRAINER TOWER ENTRANCE\n"
-    .string "Rise to the Challenge, TRAINERS!$"
+    .string "ENTRADA A LA TORRE DESAFÍO\n"
+    .string "¡A por todas, ENTRENADORES!$"
 
 SevenIsland_TrainerTower_Text_TrainerTowerAhead::
-    .string "TRAINER TOWER AHEAD$"
+    .string "HACIA LA TORRE DESAFÍO$"
 
 @ Unused text perhaps indicating Trainer Tower was planned to be unlocked by something
 SevenIsland_TrainerTower_Text_LooksLikeTrainerTowerIsClosed::
@@ -38,4 +37,3 @@ SevenIsland_TrainerTower_Text_LooksLikeTrainerTowerIsClosed::
 SevenIsland_TrainerTower_Text_TrainerTowerIsOpenLetsGoIn::
     .string "トレーナータワーが　あいてる！\n"
     .string "さっそく　はいってみよう！$"
-

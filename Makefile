@@ -204,6 +204,7 @@ rom: $(ROM)
 ifeq ($(COMPARE),1)
 	@$(SHA1) $(BUILD_NAME).sha1
 endif
+	@cp $(ROM) pokemon-enanced.gba
 
 syms: $(SYM)
 

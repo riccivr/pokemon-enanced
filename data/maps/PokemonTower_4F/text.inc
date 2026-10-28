@@ -1,33 +1,31 @@
 PokemonTower_4F_Text_PaulaIntro::
-    .string "Ghost! No!\n"
-    .string "Kwaaah!$"
+    .string "¡Un GHOST!\n¡No! ¡Guaaah!$"
 
 PokemonTower_4F_Text_PaulaDefeat::
-    .string "Where is the ghost?$"
+    .string "¿Dónde está GHOST?$"
 
 PokemonTower_4F_Text_PaulaPostBattle::
-    .string "I must have been dreaming…$"
+    .string "Debo de haberlo soñado...$"
 
 PokemonTower_4F_Text_LaurelIntro::
-    .string "Be cursed with me!\n"
-    .string "Kwaaah!$"
+    .string "¡Te vas a enterar!\n"
+    .string "¡Guaaah!$"
 
 PokemonTower_4F_Text_LaurelDefeat::
-    .string "What!$"
+    .string "¿Qué?$"
 
 PokemonTower_4F_Text_LaurelPostBattle::
-    .string "We can't determine the identity of\n"
-    .string "the ghosts…$"
+    .string "¡No podemos desvelar la identidad\n"
+    .string "de los GHOST!$"
 
 PokemonTower_4F_Text_JodyIntro::
-    .string "Huhuhu…\n"
-    .string "Beat me not!$"
+    .string "Uuuuuu...\n"
+    .string "¡Vencerme no, tú a mí!$"
 
 PokemonTower_4F_Text_JodyDefeat::
-    .string "Huh?\n"
-    .string "Who? What?$"
+    .string "¿Eh?\n"
+    .string "¿Quién? ¿Qué?$"
 
 PokemonTower_4F_Text_JodyPostBattle::
-    .string "May the departed POKéMON rest in\n"
-    .string "peace…$"
-
+    .string "¡Que descansen los POKéMON\n"
+    .string "debilitados!$"

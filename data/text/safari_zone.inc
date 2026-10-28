@@ -1,18 +1,20 @@
 @ The text here is a copy/paste from Hoenn's Safari Zone, and any unused text was left untranslated
 
 SafariZone_Text_WouldYouLikeToExit::
-	.string "Would you like to exit the SAFARI\n"
-	.string "ZONE right now?$"
+	.string "¿Quieres salir de la ZONA del\n"
+	.string "SAFARI ahora mismo?$"
 
 SafariZone_Text_TimesUp::
-	.string "PA: Ding-dong!\p"
-	.string "Time's up!\p"
-	.string "PA: Your SAFARI GAME is over!$"
+	.string "AVISO: ¡Ding-dong!\p"
+	.string "¡Se acabó el tiempo!\p"
+	.string "AVISO: ¡Tu JUEGO de SAFARI\n"
+	.string "se ha terminado!$"
 
 SafariZone_Text_OutOfBalls::
-	.string "PA: Ding-dong!\p"
-	.string "You are out of SAFARI BALLS!\p"
-	.string "PA: Your SAFARI GAME is over!$"
+	.string "AVISO: ¡Ding-dong!\p"
+	.string "Te has quedado sin SAFARI BALLS.\p"
+	.string "AVISO: ¡Tu JUEGO de SAFARI\n"
+	.string "se ha terminado!$"
 
 SafariZone_Text_WelcomeToSafariZone::
 	.string "サファリゾーンへ　ようこそ！\p"
@@ -71,8 +73,8 @@ SafariZone_Text_PleaseEnjoyYourself::
 	.string "では　いってらっしゃい！$"
 
 SafariZone_Text_ExcuseMeYourPCBoxIsFull::
-	.string "Excuse me!\n"
-	.string "Your PC BOX is full.$"
+	.string "Lo siento, pero todas las CAJAS\n"
+	.string "de tu PC están llenas.$"
 
 SafariZone_Text_YouNeedPokeblockCase::
 	.string "あ！　おきゃくさん\n"

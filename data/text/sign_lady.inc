@@ -1,30 +1,31 @@
 @ For the NPC in Pallet Town that talks about the Trainer Tips sign
 
 PalletTown_Text_HmmIsThatRight::
-	.string "Hmm…\n"
-	.string "Is that right…$"
+	.string "Mmm...\n"
+	.string "Qué curioso...$"
 
 PalletTown_Text_OhLookLook::
-	.string "Oh!\n"
-	.string "Look, look!$"
+	.string "¡Eh, mira, mira!$"
 
 PalletTown_Text_ReadItReadIt::
-	.string "Read it, read it!$"
+	.string "¡Mira lo que pone aquí, léelo!$"
 
 @ Used by sign
 PalletTown_Text_PressStartToOpenMenu::
-	.string "TRAINER TIPS\p"
-	.string "Press START to open the MENU!$"
+	.string "PISTAS ENTRENADOR\p"
+	.string "¡Pulsa START para abrir el MENÚ!$"
 
 PalletTown_Text_SignsAreUsefulArentThey::
-	.string "Signs are useful, aren't they?$"
+	.string "Es básico leer lo que pone en los\n"
+	.string "carteles, ¿no te parece?$"
 
 PalletTown_Text_LookCopiedTrainerTipsSign::
-	.string "Look, look!\p"
-	.string "I copied what it said on one of\n"
-	.string "those TRAINER TIPS signs!$"
+	.string "¡Mira, mira!\p"
+	.string "He copiado lo que ponía en uno\n"
+	.string "de los carteles de PISTAS\l"
+	.string "ENTRENADOR.$"
 
 @ Used by NPC
 PalletTown_Text_PressStartToOpenMenuCopy::
-	.string "TRAINER TIPS!\p"
-	.string "Press START to open the MENU!$"
+	.string "PISTAS ENTRENADOR\p"
+	.string "¡Pulsa START para abrir el MENÚ!$"

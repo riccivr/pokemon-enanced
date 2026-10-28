@@ -1,47 +1,46 @@
 Text_ObtainedTheX::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "¡Obtuviste {STR_VAR_2}!$"
 
 Text_BagIsFull::
-	.string "The BAG is full…$"
+	.string "La MOCHILA está llena...$"
 
 Text_PutItemAway::
-	.string "{PLAYER} put the {STR_VAR_2}\n"
-	.string "in the {STR_VAR_3}.$"
+	.string "{PLAYER} puso {STR_VAR_2}\n"
+	.string "en el {STR_VAR_3}.$"
 
 Text_FoundOneItem::
-	.string "{PLAYER} found one {STR_VAR_2}!$"
+	.string "¡{PLAYER} encontró {STR_VAR_2}!$"
 
 Text_TooBadBagFull::
-	.string "Too bad!\n"
-	.string "The BAG is full…$"
+	.string "¡Mala suerte!\n"
+	.string "La MOCHILA está llena...$"
 
 Text_FoundXCoins::
-	.string "{PLAYER} found\n"
+	.string "¡{PLAYER} encontró\n"
 	.string "{STR_VAR_1} {STR_VAR_2}!$"
 
 Text_PutCoinsAwayInCoinCase::
-	.string "{PLAYER} put the COINS away in\n"
-	.string "the COIN CASE.$"
+	.string "{PLAYER} puso las FICHAS\n"
+	.string "en el MONEDERO.$"
 
 Text_CoinCaseIsFull::
-	.string "Too bad!\n"
-	.string "The COIN CASE is full…$"
+	.string "¡Vaya!\n"
+	.string "¡Tienes el MONEDERO lleno!...$"
 
 Text_NothingToPutThemIn::
-	.string "Too bad!\n"
-	.string "There's nothing to put them in…$"
+	.string "¡Vaya!\n"
+	.string "¡No tienes MONEDERO!...$"
 
 Text_FoundXItems::
-	.string "{PLAYER} found\n"
-	.string "{STR_VAR_1} {STR_VAR_2}(s)!$"
+	.string "{PLAYER} encontró estas unidades\n"
+	.string "de {STR_VAR_2}: ¡{STR_VAR_1}!$"
 
 Text_ObtainedTheDecor::
-	.string "Obtained the {STR_VAR_2}!$"
+	.string "¡Obtuviste {STR_VAR_2}!$"
 
 Text_NoRoomForAnotherDecor::
-	.string "Too bad! There's no room left for\n"
-	.string "another {STR_VAR_2}…$"
+	.string "¡Mala suerte! No queda sitio\n"
+	.string "para {STR_VAR_2}...$"
 
 Text_DecorTransferredToPC::
-	.string "The {STR_VAR_2} was transferred\n"
-	.string "to the PC.$"
+	.string "Se envió {STR_VAR_2} al PC.$"

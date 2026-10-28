@@ -221,6 +221,7 @@
 #define CHAR_BULLSEYE          0x15
 #define CHAR_TRIANGLE          0x16
 #define CHAR_CROSS_X           0x17
+#define CHAR_LV_2_END          0x18
 
 #define EXT_CTRL_CODE_COLOR                  0x01
 #define EXT_CTRL_CODE_HIGHLIGHT              0x02
@@ -290,7 +291,7 @@
 #define BRAILLE_CHAR_B               0x05
 #define BRAILLE_CHAR_I               0x06
 #define BRAILLE_CHAR_F               0x07
-//
+#define BRAILLE_CHAR_APOSTROPHE      0x08
 #define BRAILLE_CHAR_E               0x09
 //
 #define BRAILLE_CHAR_D               0x0B
@@ -298,7 +299,7 @@
 #define BRAILLE_CHAR_H               0x0D
 #define BRAILLE_CHAR_J               0x0E
 #define BRAILLE_CHAR_G               0x0F
-#define BRAILLE_CHAR_APOSTROPHE      0x10
+#define BRAILLE_CHAR_ASTERISK        0x10
 #define BRAILLE_CHAR_K               0x11
 #define BRAILLE_CHAR_SLASH           0x12
 #define BRAILLE_CHAR_M               0x13
@@ -308,7 +309,7 @@
 #define BRAILLE_CHAR_P               0x17
 //
 #define BRAILLE_CHAR_O               0x19
-//
+#define BRAILLE_CHAR_A_DIAERESIS     0x1A
 #define BRAILLE_CHAR_N               0x1B
 #define BRAILLE_CHAR_EXCL_MARK       0x1C
 #define BRAILLE_CHAR_R               0x1D
@@ -316,7 +317,7 @@
 #define BRAILLE_CHAR_Q               0x1F
 //
 #define BRAILLE_CHAR_PERIOD          0x2C
-//
+#define BRAILLE_CHAR_U_DIAERESIS     0x2D
 #define BRAILLE_CHAR_W               0x2E
 //
 #define BRAILLE_CHAR_HYPHEN          0x30
@@ -331,6 +332,7 @@
 #define BRAILLE_CHAR_NUMBER          0x3A
 #define BRAILLE_CHAR_Y               0x3B
 #define BRAILLE_CHAR_PAREN           0x3C
+#define BRAILLE_CHAR_EQUAL           0x3F
 //
 #define NUM_BRAILLE_CHARS            0x40
 
