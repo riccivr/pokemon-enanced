@@ -42,7 +42,7 @@ EventScript_PkmnCenterNurse_ReturnPkmn::
 	waitmessage
 	applymovement VAR_LAST_TALKED, Movement_Bow
 	waitmovement 0
-	msgbox Text_WeHopeToSeeYouAgain
+	msgbox Text_NathAfterHeal
 	return
 
 EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
@@ -53,11 +53,11 @@ EventScript_PkmnCenterNurse_PlayerWaitingInUnionRoom::
 	waitmessage
 	applymovement VAR_LAST_TALKED, Movement_Bow
 	waitmovement 0
-	msgbox Text_WeHopeToSeeYouAgain
+	msgbox Text_NathAfterHeal
 	return
 
 EventScript_PkmnCenterNurse_Goodbye::
-	msgbox Text_WeHopeToSeeYouAgain
+	msgbox Text_NathCancel
 	return
 
 Movement_Bow::

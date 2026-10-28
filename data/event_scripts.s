@@ -886,21 +886,35 @@ gText_PkmnFainted3::
 	.string "$"
 
 Text_WelcomeWantToHealPkmn::
-	.string "Welcome to our POKéMON CENTER!\p"
-	.string "Would you like me to heal your\n"
-	.string "POKéMON back to perfect health?$"
+	.string "Miren a quién trajo el viento… al bolsa de {PLAYER}.\p"
+	.string "¿Ya te reventaron a los bichos otra vez?\n"
+	.string "Chamo, das pena ajena. De pana que no\l"
+	.string "sirves para esta vaina.\p"
+	.string "¿Vienes a chillar para que te los cure o qué?$"
 
 Text_TakeYourPkmnForFewSeconds::
-	.string "Okay, I'll take your POKéMON for a\n"
-	.string "few seconds.$"
+	.string "Pásalos acá rápido, gafo, no me los pegues\n"
+	.string "que me das asco.$"
 
 Text_WeHopeToSeeYouAgain::
-	.string "We hope to see you again!$"
+	.string "Lárgate de aquí antes de que te cobre\n"
+	.string "por respirar el aire de mi mostrador.\p"
+	.string "Y no te tropieces al salir, torpe.$"
+
+Text_NathAfterHeal::
+	.string "Lárgate de aquí antes de que te cobre\n"
+	.string "por respirar el aire de mi mostrador.\p"
+	.string "Y no te tropieces al salir, torpe.$"
+
+Text_NathCancel::
+	.string "¿No? ¿Entonces para qué entraste, idiota?\n"
+	.string "¿A verme la cara?\p"
+	.string "¡Sácate de mi vista antes de que te tire\n"
+	.string "una poción en la frente!$"
 
 Text_RestoredPkmnToFullHealth::
-	.string "Thank you for waiting.\n"
-	.string "We've restored your POKéMON to\l"
-	.string "full health.$"
+	.string "Listo, ahí los tienes. Están vivos de\n"
+	.string "milagro porque yo soy una arrecha, no por ti.$"
 
 	.include "data/text/surf.inc"
 
