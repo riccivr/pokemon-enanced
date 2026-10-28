@@ -76,6 +76,12 @@
 - This accommodates long dual-names like `wolfitooxd & DvD` (and future multi-O variants such as `wolfitooooooooooxd & DvD`).
 - The struct is C-managed in ROM and accessed through pointers and EOS termination, so this compiles safely without binary layout breakage.
 
+### Shiny Opponent Generation
+- For Omar (`TRAINER_LEADER_LT_SURGE`), shininess is enforced in `src/battle_main.c`:
+  - When creating party Pokémon for Omar, `otIdType` is set to `OT_ID_PRESET` and `fixedOtId` is set to `personalityValue`.
+  - Because `GET_SHINY_VALUE(otId, personality)` computes `HIHALF(otId) ^ LOHALF(otId) ^ HIHALF(personality) ^ LOHALF(personality)`, setting `otId = personality` yields `0 ^ 0 = 0 < SHINY_ODDS (8)`.
+  - This guarantees all of Omar's Pokémon are 100% Shiny, loading shiny palettes and triggering shiny sparkles/SFX in battle.
+
 ---
 
 ## 4. Work Completed
@@ -108,21 +114,32 @@
   - Configured `TRAINER_TEAM_ROCKET_GRUNT` as `wolfitooxd & DvD`.
   - Party configured with Level 70 Magikarp (Splash) and Level 12 Zubat.
   - Pre-battle, defeat, and post-battle dialogue implements the Baium Doll lvl 3, +7 talisman, and Olympiad meta rants.
-- [x] **CI & Verification:**
-  - `make -j$(nproc)` compiles with 0 errors.
-  - GitHub Actions workflow successfully builds and uploads `pokemon-enanced.gba` artifact for `phase2-viridian-pewter-mtmoon`.
+
+### Phase 3: Vermilion City, Omar Shiny Gym, Celadon Mauro AFK Gym & wolfitooooxd
+- [x] **Vermilion City (Kyrales Tow Truck Scene):**
+  - Added Kyrales and Mechanic outside Vermilion Gym at (16, 21) and (17, 21) in `data/maps/VermilionCity/map.json`.
+  - Kyrales argues with the mechanic over white smoke and a blown head gasket, then notices GVR and asks what kind of Tenerife curse was put on him after pushing his tow truck all the way from Cerulean City.
+- [x] **Vermilion Gym Leader (Omar / Thunderay):**
+  - Replaced Lt. Surge with `OMAR` in `src/data/trainers.h` and `data/maps/VermilionCity_Gym/text.inc`.
+  - Enforced 100% Shiny generation for Omar's party in `src/battle_main.c`.
+  - Dialogue brags about solving trash can locks on the first try and pulling 3-star Baium dolls from free L-Coin boxes. Defeat dialogue references the bad luck of the canary tow truck guy outside.
+- [x] **Celadon Gym (Mauro's 24/7 AFK Auto-Hunt Gym):**
+  - Replaced Erika with `MAURO` in `src/data/trainers.h` and `data/maps/CeladonCity_Gym/text.inc` / `scripts.inc`.
+  - First interaction: Mauro is completely AFK staring at his Lineage 2 Essence screen.
+  - Second interaction: Mauro gets annoyed at being disturbed during auto-farm in Sel Mahum, hands over Rainbow Badge and TM19 (Giga Drain) without a fight, sets badge/story flags, and goes back to being AFK.
+- [x] **Rocket Hideout B4F (Encounter 2 with wolfitooooxd & DvD):**
+  - `TRAINER_TEAM_ROCKET_GRUNT_16` renamed to `wolfitooooxd & DvD` (4 'o's).
+  - Configured high-level meme team (Lvl 75 Magikarp, Lvl 28 Supersonic Zubat, Lvl 26 Metapod).
+  - Dialogue brags that having 4 'o's means higher Essence gear score and 200 IQ Supersonic strategies.
 
 ---
 
 ## 5. Next Steps (Upcoming Phases)
-1. **Phase 3: Cerulean City, Nugget Bridge & Route 24/25**
-   - Cerulean Gym Leader (Water type).
-   - Nugget Bridge trainers and Rocket recruitment pitch.
-   - Bill's Sea Cottage.
-2. **Phase 4: Vermilion City & S.S. Anne**
-   - Kyrales broken tow truck arrival scene outside Vermilion Gym.
-   - Lt. Surge replacement: **Omar (Thunderay)** (all Shiny team, extreme L-Coin gacha luck).
-   - S.S. Anne rival battle and Cut HM.
-3. **Phase 5: Celadon City & Rocket Game Corner**
-   - Erika replacement: **Mauro** (AFK auto-hunt gym leader, gives badge on second prompt).
-   - Rocket Game Corner B4F: **wolfitooooxd & DvD** (Encounter 2, with 4 O's).
+1. **Phase 4: Lavender Town & Pokémon Tower**
+   - Pokémon Tower 7F: **wolfitoooooooxd & DvD** (Encounter 3, with 6 O's).
+   - Mr. Fuji scene.
+2. **Phase 5: Fuchsia Gym (Puchi)**
+   - Leader: **Puchi** (Poison type, toxic clan chat master).
+3. **Phase 6: Silph Co. & Saffron Gym**
+   - Silph Co. 11F: **wolfitooooooooooxd & DvD** (Encounter 4, with 10 O's) and Nova.
+   - Saffron Gym: **Nath** (Psychic gym bully gauntlet).
