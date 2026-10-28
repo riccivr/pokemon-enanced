@@ -22,18 +22,30 @@ MtMoon_B2F_Text_LabOnCinnabarRegeneratesFossils::
     .string "fossils.$"
 
 MtMoon_B2F_Text_Grunt1Intro::
-    .string "We, TEAM ROCKET, shall find the\n"
-    .string "fossils!\p"
-    .string "Reviving POKéMON from them will\n"
-    .string "earn us huge riches!$"
+    .string "WOLFITO: ¡Paren todo! ¡Miren a quién\n"
+    .string "tenemos aquí, DvD!\p"
+    .string "¡Un miembro del clan Epidemic farmeando\n"
+    .string "bichos en nuestro spot de auto-hunt!\p"
+    .string "DVD: Un random, wolfitooxd. Un pobre\n"
+    .string "diablo con un equipo fuera de tier.\p"
+    .string "WOLFITO: ¡Exacto! Somos la división de\n"
+    .string "élite de Nova Rocket.\p"
+    .string "Nosotros no usamos basuras como los demás.\n"
+    .string "Nosotros seguimos el meta de Essence al pie\l"
+    .string "de la letra.\p"
+    .string "¡Te presento a mi Magikarp nivel 70!\n"
+    .string "¡Tiene muñeca de Baium nivel 3 y talismán\l"
+    .string "+7, papa!\p"
+    .string "DVD: Prepárate para ser humillado por la\n"
+    .string "vanguardia competitiva de las Olympiads.$"
 
 MtMoon_B2F_Text_Grunt1Defeat::
-    .string "Urgh!\n"
-    .string "Now I'm mad!$"
+    .string "WOLFITO: ¿¡Qué!? ¡Hax! ¡Eso fue puro lag\n"
+    .string "y RNG sucio! ¡El server está bugueado!$"
 
 MtMoon_B2F_Text_Grunt1PostBattle::
-    .string "You made me mad!\n"
-    .string "TEAM ROCKET will blacklist you!$"
+    .string "DVD: Vámonos, wolfitooxd, este tipo\n"
+    .string "juega con scripts ilegales.$"
 
 MtMoon_B2F_Text_Grunt2Intro::
     .string "We, TEAM ROCKET, are POKéMON\n"
