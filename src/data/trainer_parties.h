@@ -4420,21 +4420,24 @@ static const struct TrainerMonNoItemDefaultMoves sParty_TeamRocketGrunt15[] = {
     },
 };
 
-static const struct TrainerMonNoItemDefaultMoves sParty_TeamRocketGrunt16[] = {
+static const struct TrainerMonNoItemCustomMoves sParty_TeamRocketGrunt16[] = {
     {
         .iv = 0,
-        .lvl = 23,
-        .species = SPECIES_SANDSHREW,
+        .lvl = 75,
+        .species = SPECIES_MAGIKARP,
+        .moves = {MOVE_SPLASH, MOVE_TACKLE, MOVE_FLAIL, MOVE_NONE},
     },
     {
         .iv = 0,
-        .lvl = 23,
-        .species = SPECIES_EKANS,
+        .lvl = 28,
+        .species = SPECIES_ZUBAT,
+        .moves = {MOVE_SUPERSONIC, MOVE_BITE, MOVE_WING_ATTACK, MOVE_CONFUSE_RAY},
     },
     {
         .iv = 0,
-        .lvl = 23,
-        .species = SPECIES_SANDSLASH,
+        .lvl = 26,
+        .species = SPECIES_METAPOD,
+        .moves = {MOVE_HARDEN, MOVE_TACKLE, MOVE_NONE, MOVE_NONE},
     },
 };
 

@@ -22,15 +22,20 @@ RocketHideout_B4F_Text_GiovanniPostBattle::
     .string "I hope we meet again…$"
 
 RocketHideout_B4F_Text_Grunt2Intro::
-    .string "I know you!\n"
-    .string "You ruined our plans at MT. MOON!$"
+    .string "WOLFITO: ¡Nos volvemos a ver, {PLAYER}!\p"
+    .string "¿Notaste algo diferente? Sí, ahora soy\n"
+    .string "wolfitooooxd con cuatro O.\p"
+    .string "Más O significa más gear score en el clan.\p"
+    .string "DVD: Esta vez trajimos a un Zubat con\n"
+    .string "Supersonic. Estrategia 200 IQ.$"
 
 RocketHideout_B4F_Text_Grunt2Defeat::
-    .string "Burned again!$"
+    .string "WOLFITO: ¡No puede ser! ¡El juego está\n"
+    .string "desbalanceado! ¡Voy a quejarme al soporte!$"
 
 RocketHideout_B4F_Text_Grunt2PostBattle::
-    .string "Do you have something against TEAM\n"
-    .string "ROCKET?$"
+    .string "DVD: Claramente el rival tiene equipamiento\n"
+    .string "pay-to-win sacado con tarjeta de crédito.$"
 
 RocketHideout_B4F_Text_Grunt3Intro::
     .string "How can you not see the beauty of\n"
