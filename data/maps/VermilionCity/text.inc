@@ -47,8 +47,8 @@ VermilionCity_Text_PokemonFanClubSign::
 
 VermilionCity_Text_GymSign::
     .string "VERMILION CITY POKéMON GYM\n"
-    .string "LEADER: LT. SURGE\l"
-    .string "The Lightning American!$"
+    .string "LEADER: OMAR (THUNDERAY)\l"
+    .string "¡Pura suerte divina!$"
 
 VermilionCity_Text_VermilionHarbor::
     .string "VERMILION HARBOR$"
@@ -128,4 +128,34 @@ VermilionCity_Text_Route2AideHasPackageForYou::
     .string "ROUTE 2, {PLAYER}.\p"
     .string "If you're in the ROUTE 2 area,\n"
     .string "please look for him.$"
+
+VermilionCity_Text_KyralesArguingWithMechanic::
+    .string "{RIVAL}: ¡Que no me arranca, coño!\p"
+    .string "Te estoy diciendo que echa humo blanco\n"
+    .string "por el tubo de escape.\p"
+    .string "¿Cómo coño voy a llegar a la Liga\n"
+    .string "POKéMON en grúa?$"
+
+VermilionCity_Text_KyralesNoticesPlayer::
+    .string "{RIVAL}: (Se gira y ve a {PLAYER})\p"
+    .string "¡¿Tú otra vez, {PLAYER}!?\p"
+    .string "¿Tú sabes lo que es venir empujando\n"
+    .string "una grúa averiada desde Ciudad Celeste\l"
+    .string "bajo este solajero?\p"
+    .string "¿Qué clase de maldición me echaron\n"
+    .string "a mí en Tenerife, mi niño?\p"
+    .string "¡No te rías, cabrón, que el karma te\n"
+    .string "va a pillar!$"
+
+VermilionCity_Text_KyralesSubsequentTalk::
+    .string "{RIVAL}: ¡Tira para el gimnasio o para\n"
+    .string "el barco, {PLAYER}!\p"
+    .string "Bastante tengo yo con intentar que esta\n"
+    .string "chatarra no explote.$"
+
+VermilionCity_Text_Mechanic::
+    .string "Mecánico: Te dije que ese motor está\n"
+    .string "fundido, compadre.\p"
+    .string "Ese humo blanco es la junta de la culata.\n"
+    .string "Esa grúa no llega ni a la esquina.$"
 

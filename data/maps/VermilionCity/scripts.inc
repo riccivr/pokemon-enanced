@@ -264,3 +264,38 @@ VermilionCity_EventScript_GymSign::
 VermilionCity_EventScript_HarborSign::
 	msgbox VermilionCity_Text_VermilionHarbor, MSGBOX_SIGN
 	end
+
+VermilionCity_EventScript_Kyrales::
+	lock
+	goto_if_set FLAG_TEMP_2, VermilionCity_EventScript_KyralesSubsequent
+	setflag FLAG_TEMP_2
+	applymovement VAR_LAST_TALKED, Common_Movement_WalkInPlaceFasterRight
+	waitmovement 0
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_KyralesArguingWithMechanic
+	closemessage
+	playse SE_PIN
+	applymovement VAR_LAST_TALKED, Common_Movement_ExclamationMark
+	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_Delay48
+	waitmovement 0
+	applymovement VAR_LAST_TALKED, Common_Movement_FacePlayer
+	waitmovement 0
+	msgbox VermilionCity_Text_KyralesNoticesPlayer
+	release
+	end
+
+VermilionCity_EventScript_KyralesSubsequent::
+	faceplayer
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_KyralesSubsequentTalk
+	release
+	end
+
+VermilionCity_EventScript_Mechanic::
+	lock
+	faceplayer
+	textcolor NPC_TEXT_COLOR_MALE
+	msgbox VermilionCity_Text_Mechanic
+	release
+	end
