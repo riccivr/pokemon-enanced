@@ -1,104 +1,45 @@
-name: CI
+name: Build Pokémon ENANCED
 
 on:
   push:
-    branches: [ master ]
+    branches: [ master, 'phase*' ]
   pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      GAME_VERSION: FIRERED
-      GAME_LANGUAGE: ENGLISH
-      GAME_REVISION: 0
-      MODERN: 0
-      COMPARE: 1
     steps:
-      - name: Checkout
-        uses: actions/checkout@master
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
-      - name: Checkout agbcc
-        uses: actions/checkout@master
+      - name: Checkout agbcc compiler
+        uses: actions/checkout@v4
         with:
           path: 'agbcc'
           repository: 'pret/agbcc'
 
-      - name: Checkout symbols
-        if: ${{ github.event_name == 'push' }}
-        uses: actions/checkout@master
-        with:
-          path: 'symbols'
-          ref: 'symbols'
-
-      - name: Install binutils
+      - name: Install build tools
         run: |
-          sudo apt update
-          sudo apt install gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
-        # build-essential and git are already installed
-        # gcc-arm-none-eabi is only needed for the modern build
-        # as an alternative to dkP
+          sudo apt-get update
+          sudo apt-get install -y gcc-arm-none-eabi binutils-arm-none-eabi libpng-dev
 
-      - name: Install agbcc
+      - name: Build and install agbcc
+        working-directory: ./agbcc
         run: |
           ./build.sh
           ./install.sh ../
-        working-directory: ./agbcc
 
-      - name: Compare FireRed
-        run: |
-          make -j${nproc} all syms
-
-      - name: Compare FireRed rev1
+      - name: Compile Pokémon ENANCED ROM
         env:
-          GAME_REVISION: 1
-        run: |
-          make -j${nproc} all syms
-
-      - name: Compare FireRed rev10
-        env:
-          GAME_REVISION: 10
-        run: |
-          make -j${nproc} all syms
-
-      - name: Compare LeafGreen
-        env:
-          GAME_VERSION: LEAFGREEN
-        run: |
-          make -j${nproc} all syms
-
-      - name: Compare LeafGreen rev1
-        env:
-          GAME_VERSION: LEAFGREEN
-          GAME_REVISION: 1
-        run: |
-          make -j${nproc} all syms
-
-      - name: Compare LeafGreen rev10
-        env:
-          GAME_VERSION: LEAFGREEN
-          GAME_REVISION: 10
-        run: |
-          make -j${nproc} all syms
-
-      - name: Build Modern
-        env:
-          MODERN: 1
           COMPARE: 0
         run: |
-          make -j${nproc} all
+          make -j$(nproc)
+          cp pokefirered.gba pokemon-enanced.gba
 
-      - name: Move symfiles
-        if: ${{ github.event_name == 'push' }}
-        run: |
-          cp *.sym symbols/
-          echo "SYMBOLS_COMMIT_MSG=$( git log --format=%s ${GITHUB_SHA} )" >> $GITHUB_ENV
-
-      - name: Update symfiles
-        if: ${{ github.event_name == 'push' }}
-        uses: EndBug/add-and-commit@v7
+      - name: Upload playable ROM
+        uses: actions/upload-artifact@v4
         with:
-          branch: symbols
-          cwd: "./symbols"
-          add: "*.sym"
-          message: ${{ env.SYMBOLS_COMMIT_MSG }}
+          name: pokemon-enanced-rom
+          path: pokemon-enanced.gba
+          retention-days: 14
