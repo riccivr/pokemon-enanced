@@ -1,36 +1,27 @@
 PewterCity_Gym_Text_BrockIntro::
-    .string "So, you're here. I'm BROCK.\n"
-    .string "I'm PEWTER's GYM LEADER.\p"
-    .string "My rock-hard willpower is evident\n"
-    .string "even in my POKéMON.\p"
-    .string "My POKéMON are all rock hard, and\n"
-    .string "have true-grit determination.\p"
-    .string "That's right - my POKéMON are all\n"
-    .string "the ROCK type!\p"
-    .string "Fuhaha! You're going to challenge\n"
-    .string "me knowing that you'll lose?\p"
-    .string "That's the TRAINER's honor that\n"
-    .string "compels you to challenge me.\p"
-    .string "Fine, then!\n"
-    .string "Show me your best!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+    .string "Epa, {PLAYER}. ¿Te perdiste o qué?\p"
+    .string "Aquí no estás en zona pacífica con el\n"
+    .string "auto-hunt prendido, chamo.\p"
+    .string "Mis rocas no se quiebran con cualquier\n"
+    .string "huevonada.\p"
+    .string "Si quieres la medalla, vas a tener que\n"
+    .string "sudarla, mi pana.\p"
+    .string "¡Saca a tus bichos pues!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 @ NOTE: This defeat text actually causes a buffer overflow. It's too long for the gDisplayedStringBattle
 @ buffer that it's put into, and it stomps all over the gBattleTextBuffs after, as well as the otherwise
 @ unused array after that, sFlickerArray. Perhaps that's the reason why said array exists.
 PewterCity_Gym_Text_BrockDefeat::
-    .string "I took you for granted, and so\n"
-    .string "I lost.\p"
-    .string "As proof of your victory, I confer\n"
-    .string "on you this…the official POKéMON\l"
-    .string "LEAGUE BOULDERBADGE.\p"
+    .string "Verga, me ganaste… Bueno, tampoco es que\n"
+    .string "traje a mi main con buffs completos, ¿oíste?\p"
+    .string "Toma tu Medalla Roca y no te creas la gran\n"
+    .string "vaina.\p"
     .string "{FONT_NORMAL}{PLAYER} received the BOULDERBADGE\n"
-    .string "from BROCK!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
-    .string "{FONT_MALE}Just having the BOULDERBADGE makes\n"
-    .string "your POKéMON more powerful.\p"
-    .string "It also enables the use of the\n"
-    .string "move FLASH outside of battle.\p"
-    .string "Of course, a POKéMON must know the\n"
-    .string "move FLASH to use it.$"
+    .string "from FAFA!{PAUSE_MUSIC}{PLAY_BGM}{MUS_OBTAIN_BADGE}{PAUSE 0xFE}{PAUSE 0x56}{RESUME_MUSIC}\p"
+    .string "{FONT_MALE}Con la Medalla Roca tus bichos pegan más duro\n"
+    .string "y puedes usar DESTELLO fuera de batalla.\p"
+    .string "Claro, si es que algún bicho tuyo aprende\n"
+    .string "esa vaina.$"
 
 PewterCity_Gym_Text_TakeThisWithYou::
     .string "Wait!\n"
@@ -38,7 +29,7 @@ PewterCity_Gym_Text_TakeThisWithYou::
 
 PewterCity_Gym_Text_ReceivedTM39FromBrock::
     .string "{PLAYER} received TM39\n"
-    .string "from BROCK.$"
+    .string "from FAFA.$"
 
 PewterCity_Gym_Text_ExplainTM39::
     .string "A TM, Technical Machine, contains a\n"
@@ -54,13 +45,9 @@ PewterCity_Gym_Text_ExplainTM39::
     .string "lowers its SPEED.$"
 
 PewterCity_Gym_Text_BrockPostBattle::
-    .string "There are all kinds of TRAINERS in\n"
-    .string "this huge world of ours.\p"
-    .string "You appear to be very gifted as a\n"
-    .string "POKéMON TRAINER.\p"
-    .string "So let me make a suggestion.\p"
-    .string "Go to the GYM in CERULEAN and test\n"
-    .string "your abilities.$"
+    .string "Bueno, mano, dale para Ciudad Celeste.\n"
+    .string "A ver si allá te enseñan a farmear como\l"
+    .string "la gente, porque aquí me diste lástima.$"
 
 PewterCity_Gym_Text_DontHaveRoomForThis::
     .string "You don't have room for this.$"
@@ -68,7 +55,7 @@ PewterCity_Gym_Text_DontHaveRoomForThis::
 PewterCity_Gym_Text_LiamIntro::
     .string "Stop right there, kid!\p"
     .string "You're ten thousand light-years \n"
-    .string "from facing BROCK!$"
+    .string "from facing FAFA!$"
 
 PewterCity_Gym_Text_LiamDefeat::
     .string "Darn!\p"
@@ -77,7 +64,7 @@ PewterCity_Gym_Text_LiamDefeat::
 
 PewterCity_Gym_Text_LiamPostBattle::
     .string "You're pretty hot.\n"
-    .string "…But not as hot as BROCK!$"
+    .string "…But not as hot as FAFA!$"
 
 PewterCity_Gym_Text_LetMeTakeYouToTheTop::
     .string "Hiya!\n"
@@ -110,13 +97,13 @@ PewterCity_Gym_Text_YoureChampMaterial::
 
 PewterCity_Gym_Text_GymStatue::
     .string "PEWTER POKéMON GYM\n"
-    .string "LEADER: BROCK\p"
+    .string "LEADER: FAFA\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
 PewterCity_Gym_Text_GymStatuePlayerWon::
     .string "PEWTER POKéMON GYM\n"
-    .string "LEADER: BROCK\p"
+    .string "LEADER: FAFA\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
 
