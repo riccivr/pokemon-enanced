@@ -2,10 +2,10 @@ gOtherText_NewName::
     .string "NEW NAME$"
 
 gNameChoice_Green::
-    .string "GREEN$"
+    .string "KYRALES$"
 
 gNameChoice_Red::
-    .string "RED$"
+    .string "GVR$"
 
 gNameChoice_Leaf::
     .string "LEAF$"
@@ -187,57 +187,62 @@ gPikachuIntro_Text_Page3::
     .string "adventure begin!$"
 
 gOakSpeech_Text_WelcomeToTheWorld::
-    .string "Hello, there!\n"
-    .string "Glad to meet you!\p"
-    .string "Welcome to the world of POKéMON!\p"
-    .string "My name is OAK.\p"
-    .string "People affectionately refer to me\n"
-    .string "as the POKéMON PROFESSOR.\p$"
+    .string "Ey. Listen to me. Turn sound on.\p"
+    .string "Welcome to world of POKéMON,\n"
+    .string "or whatever this server is called.\p"
+    .string "My name Frankie. FrankieDeckard.\n"
+    .string "Clan leader of Epidemic.\p"
+    .string "People call me Professor here, but\n"
+    .string "honestly I just read Russian forums\l"
+    .string "for Lineage 2 at 4 AM.\p"
+    .string "Very good leak information there.\n"
+    .string "Trust me.\p$"
 
 gOakSpeech_Text_ThisWorld::
-    .string "This world…$"
+    .string "Look at this…$"
 
 gOakSpeech_Text_IsInhabitedFarAndWide::
-    .string "…is inhabited far and wide by\n"
-    .string "creatures called POKéMON.\p$"
+    .string "…beast. Majestic.\p"
+    .string "Some idiots tell you 'roll damage\n"
+    .string "dealer, roll mage, pick Charizard'.\l"
+    .string "Bullshit.\p$"
 
 gOakSpeech_Text_IStudyPokemon::
-    .string "For some people, POKéMON are pets.\n"
-    .string "Others use them for battling.\p"
-    .string "As for myself…\p"
-    .string "I study POKéMON as a profession.\p$"
+    .string "My cousin in Tirana told me true meta\n"
+    .string "is hidden in low tier classes.\p$"
 
 gOakSpeech_Text_TellMeALittleAboutYourself::
-    .string "But first, tell me a little about\n"
-    .string "yourself.\p$"
+    .string "Anyway, I need to know who logged in.\n"
+    .string "My memory is fried, too much smoking.\p$"
 
 gOakSpeech_Text_YourNameWhatIsIt::
-    .string "Let's begin with your name.\n"
-    .string "What is it?\p$"
+    .string "Good. Now, what was your character\n"
+    .string "name again?\p$"
 
 gOakSpeech_Text_SoYourNameIsPlayer::
-    .string "Right…\n"
-    .string "So your name is {PLAYER}.$"
+    .string "Ah, {PLAYER}!\n"
+    .string "Yes, our Venezuelan clan member.$"
 
 gOakSpeech_Text_WhatWasHisName::
-    .string "This is my grandson.\p"
-    .string "He's been your rival since you both\n"
-    .string "were babies.\p"
-    .string "…Erm, what was his name now?$"
+    .string "And that other guy who logged in\n"
+    .string "from Canary Islands…\p"
+    .string "The one who always cries about\n"
+    .string "his drop rates…\p"
+    .string "What was his name?$"
 
 gOakSpeech_Text_YourRivalsNameWhatWasIt::
-    .string "Your rival's name, what was it now?$"
+    .string "That Canary guy, what was his name?$"
 
 gOakSpeech_Text_ConfirmRivalName::
     .string "…Er, was it {RIVAL}?$"
 
 gOakSpeech_Text_RememberRivalsName::
-    .string "That's right! I remember now!\n"
-    .string "His name is {RIVAL}!\p$"
+    .string "Right! {RIVAL}! Poor guy.\p"
+    .string "Yesterday he burned 50,000 L-Coins\n"
+    .string "failing compound on Talisman of Eva\l"
+    .string "to +1 and cried on Discord.\p$"
 
 gOakSpeech_Text_LetsGo::
-    .string "{PLAYER}!\p"
-    .string "Your very own POKéMON legend is\n"
-    .string "about to unfold!\p"
-    .string "A world of dreams and adventures\n"
-    .string "with POKéMON awaits! Let's go!$"
+    .string "{PLAYER}, new chronicle starts now.\p"
+    .string "Go outside, turn auto-hunt on,\n"
+    .string "do not do anything stupid.$"
