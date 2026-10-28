@@ -1,130 +1,144 @@
 PalletTown_ProfessorOaksLab_Text_RivalGrampsIsntAround::
-    .string "{RIVAL}: What, it's only {PLAYER}?\n"
-    .string "Gramps isn't around.$"
+    .string "{RIVAL}: ¿Qué pasa, {PLAYER}?\n"
+    .string "Frankie todavía no llega.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalFedUpWithWaiting::
-    .string "{RIVAL}: Gramps!\n"
-    .string "I'm fed up with waiting!$"
+    .string "{RIVAL}: Chacho, no te lo vas a creer.\n"
+    .string "Cada vez que Frankie nos mete a un\l"
+    .string "servidor nuevo de Lineage me pasa\l"
+    .string "una desgracia.\p"
+    .string "Venía para el lab y se me reventó\n"
+    .string "la rueda de la grúa.\p"
+    .string "La grúa que llevaba mi otra grúa\n"
+    .string "que se había averiado en la autopista.\p"
+    .string "Dos horas esperando al del seguro bajo\n"
+    .string "el sol de Tenerife.\l"
+    .string "¡Qué desgracia de vida!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalNoFairWhatAboutMe::
-    .string "{RIVAL}: Hey! Gramps! No fair!\n"
-    .string "What about me?$"
+    .string "{RIVAL}: ¡Coño, Frankie! ¿Por qué él?\n"
+    .string "¡Siempre le das el mejor drop a él!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoChoosePlayer::
-    .string "{RIVAL}: Heh, I don't need to be\n"
-    .string "greedy like you. I'm mature!\p"
-    .string "Go ahead and choose, {PLAYER}!$"
+    .string "{RIVAL}: Venga, {PLAYER}, elige ya,\n"
+    .string "que se me enfría el café.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalIllTakeThisOneThen::
-    .string "{RIVAL}: I'll take this one, then!$"
+    .string "{RIVAL}: Bueno, pues me quedo con\n"
+    .string "este otro… a ver qué clase me tocó…$"
 
 PalletTown_ProfessorOaksLab_Text_RivalReceivedMonFromOak::
     .string "{RIVAL} received the {STR_VAR_1}\n"
-    .string "from PROF. OAK!$"
+    .string "from FRANKIEDECKARD!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalMyMonLooksTougher::
-    .string "{RIVAL}: My POKéMON looks a lot\n"
-    .string "tougher than yours.$"
+    .string "{RIVAL}: Al menos mi bicho tiene\n"
+    .string "pinta de aguantar algún golpe.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLetsCheckOutMons::
-    .string "{RIVAL}: Wait, {PLAYER}!\n"
-    .string "Let's check out our POKéMON!\p"
-    .string "Come on, I'll take you on!$"
+    .string "{RIVAL}: ¡Espera, {PLAYER}!\p"
+    .string "¿Un METAPOD? ¿En serio? ¿Un bicho\n"
+    .string "verde que solo se pone duro?\p"
+    .string "Frankie, me cago en diez, siempre\n"
+    .string "me haces lo mismo.\p"
+    .string "En el último Essence me dijiste que me\n"
+    .string "hiciera una clase 'rota' y no mato\l"
+    .string "ni a los bichos del tutorial.\p"
+    .string "Y encima quemé todos los L-Coins en\n"
+    .string "cajas vacías.\p"
+    .string "¡Mira, {PLAYER}, aunque mi vida sea\n"
+    .string "una ruina y mi starter no pegue nada,\l"
+    .string "al menos te voy a medir el lomo!\p"
+    .string "¡A pelear!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalDefeat::
-    .string "WHAT?\n"
-    .string "Unbelievable!\l"
-    .string "I picked the wrong POKéMON!$"
+    .string "¡¿Pero qué coño!?\n"
+    .string "¡Si te digo yo que la tengo negra!\l"
+    .string "¡Otra vez me quedé con la clase\l"
+    .string "más inútil del parche!$"
 
 @ Also used for early Route 22 battle
 Text_RivalVictory::
-    .string "{RIVAL}: Yeah!\n"
-    .string "Am I great or what?$"
+    .string "{RIVAL}: ¡Toma ya!\n"
+    .string "¡Hasta con un bicho que no pega nada\l"
+    .string "te medí el lomo, mi niño!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGoToughenMyMon::
-    .string "{RIVAL}: Okay! I'll make my\n"
-    .string "POKéMON battle to toughen it up!\p"
-    .string "{PLAYER}! Gramps!\n"
-    .string "Smell you later!$"
+    .string "{RIVAL}: ¡Venga, me voy a buscar la grúa\n"
+    .string "al taller antes de que me cobren\l"
+    .string "la estancia!\p"
+    .string "¡Nos vemos en la ruta, chiquillo!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalGramps::
-    .string "{RIVAL}: Gramps!$"
+    .string "{RIVAL}: ¡Frankie!$"
 
 PalletTown_ProfessorOaksLab_Text_RivalWhatDidYouCallMeFor::
-    .string "{RIVAL}: I almost forgot!\n"
-    .string "What did you call me for?$"
+    .string "{RIVAL}: ¡Casi se me olvida!\n"
+    .string "¿Para qué me llamaste?$"
 
 PalletTown_ProfessorOaksLab_Text_RivalLeaveItToMeGramps::
-    .string "{RIVAL}: All right, Gramps!\n"
-    .string "Leave it all to me!$"
+    .string "{RIVAL}: Vale, Frankie.\n"
+    .string "Déjamelo a mí.$"
 
 PalletTown_ProfessorOaksLab_Text_RivalTellSisNotToGiveYouMap::
-    .string "{PLAYER}, I hate to say it, but you\n"
-    .string "won't be necessary for this.\p"
-    .string "I know! I'll borrow a TOWN MAP\n"
-    .string "from my sis!\p"
-    .string "I'll tell her not to lend you one,\n"
-    .string "{PLAYER}! Hahaha!\p"
-    .string "Don't bother coming around to\n"
-    .string "my place after this!$"
+    .string "{PLAYER}, no te flipes.\n"
+    .string "Le voy a pedir el mapa a mi hermana\l"
+    .string "y le diré que a ti no te dé nada.\p"
+    .string "¡Hahaha! ¡Nos vemos!$"
 
 PalletTown_ProfessorOaksLab_Text_OakThreeMonsChooseOne::
-    .string "OAK: {RIVAL}?\n"
-    .string "Let me think…\p"
-    .string "Oh, that's right, I told you to\n"
-    .string "come! Just wait!\p"
-    .string "Here, {PLAYER}.\p"
-    .string "There are three POKéMON here.\p"
-    .string "Haha!\p"
-    .string "The POKéMON are held inside\n"
-    .string "these POKé BALLS.\p"
-    .string "When I was young, I was a serious\n"
-    .string "POKéMON TRAINER.\p"
-    .string "But now, in my old age, I have\n"
-    .string "only these three left.\p"
-    .string "You can have one.\n"
-    .string "Go on, choose!$"
+    .string "FRANKIE: Shut up, Kyrales, stop crying\n"
+    .string "in clan chat.\p"
+    .string "Listen, boys. Fresh server, fresh meta.\n"
+    .string "I spent all night reading private\l"
+    .string "server patch notes.\p"
+    .string "Forget standard picks. Look at table.\n"
+    .string "Three elite starter classes.\p"
+    .string "Go on, {PLAYER}, pick first.$"
 
 PalletTown_ProfessorOaksLab_Text_OakBePatientRival::
-    .string "OAK: Be patient, {RIVAL}.\n"
-    .string "You can have one, too!$"
+    .string "FRANKIE: Relax, Kyrales.\n"
+    .string "All classes on table are S tier.$"
 
 PalletTown_ProfessorOaksLab_Text_OakWhichOneWillYouChoose::
-    .string "OAK: Now, {PLAYER}.\p"
-    .string "Inside those three POKé BALLS are\n"
-    .string "POKéMON.\p"
-    .string "Which one will you choose for\n"
-    .string "yourself?$"
+    .string "FRANKIE: Look at Pokéballs.\n"
+    .string "Pick your class, {PLAYER}.$"
 
 PalletTown_ProfessorOaksLab_Text_OakHeyDontGoAwayYet::
-    .string "OAK: Hey!\n"
-    .string "Don't go away yet!$"
+    .string "FRANKIE: Ey!\n"
+    .string "Do not walk away with no class!$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingCharmander::
-    .string "Ah! CHARMANDER is your choice.\n"
-    .string "You should raise it patiently.\p"
-    .string "So, {PLAYER}, you're claiming the\n"
-    .string "FIRE POKéMON CHARMANDER?$"
+    .string "It contains SUNKERN.\p"
+    .string "FRANKIE: Lowest base stats in chronicle\n"
+    .string "history. Total sleeper build.\l"
+    .string "Only real high-IQ players pick this.\p"
+    .string "So, {PLAYER}, you claiming the\n"
+    .string "200 IQ off-meta SUNKERN?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingSquirtle::
-    .string "Hm! SQUIRTLE is your choice.\n"
-    .string "It's one worth raising.\p"
-    .string "So, {PLAYER}, you've decided on the\n"
-    .string "WATER POKéMON SQUIRTLE?$"
+    .string "It contains METAPOD.\p"
+    .string "FRANKIE: Pure tank.\n"
+    .string "You press Harden six times and tank\l"
+    .string "entire raid boss while smoking cigarette.\p"
+    .string "So, {PLAYER}, you want to roll\n"
+    .string "the invincible METAPOD?$"
 
 PalletTown_ProfessorOaksLab_Text_OakChoosingBulbasaur::
-    .string "I see! BULBASAUR is your choice.\n"
-    .string "It's very easy to raise.\p"
-    .string "So, {PLAYER}, you want to go with\n"
-    .string "the GRASS POKéMON BULBASAUR?$"
+    .string "It contains MAGIKARP.\p"
+    .string "FRANKIE: This is top DPS class.\n"
+    .string "You just press Splash until enemy\l"
+    .string "gets mental damage and leaves server.\p"
+    .string "So, {PLAYER}, you want to lock in\n"
+    .string "the god-tier MAGIKARP?$"
 
 PalletTown_ProfessorOaksLab_Text_OakThisMonIsEnergetic::
-    .string "This POKéMON is really quite\n"
-    .string "energetic!$"
+    .string "FRANKIE: Very good pick.\n"
+    .string "Trust Russian forums, trust me.$"
 
 PalletTown_ProfessorOaksLab_Text_ReceivedMonFromOak::
     .string "{PLAYER} received the {STR_VAR_1}\n"
-    .string "from PROF. OAK!$"
+    .string "from FRANKIEDECKARD!$"
 
 PalletTown_ProfessorOaksLab_Text_OakCanReachNextTownWithMon::
     .string "OAK: If a wild POKéMON appears,\n"

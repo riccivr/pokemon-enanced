@@ -1,14 +1,13 @@
 PalletTown_Text_OakDontGoOut::
-    .string "OAK: Hey! Wait!\n"
+    .string "FRANKIE: Ey! Stop!\n"
     .string "Don't go out!$"
 
 PalletTown_Text_OakGrassUnsafeNeedMon::
-    .string "OAK: It's unsafe!\n"
-    .string "Wild POKéMON live in tall grass!\p"
-    .string "You need your own POKéMON for\n"
-    .string "your protection.\p"
-    .string "I know!\n"
-    .string "Here, come with me!$"
+    .string "FRANKIE: Are you crazy?\n"
+    .string "You go out with no buffs, no starter?\p"
+    .string "Russian forum says mobs outside\n"
+    .string "will one-shot you!\p"
+    .string "Come to lab, pick your class first!$"
 
 PalletTown_Text_RaisingMonsToo::
     .string "I'm raising POKéMON, too.\p"
@@ -21,7 +20,8 @@ PalletTown_Text_CanStoreItemsAndMonsInPC::
     .string "and POKéMON as data via PC.$"
 
 PalletTown_Text_OakPokemonResearchLab::
-    .string "OAK POKéMON RESEARCH LAB$"
+    .string "EPIDEMIC CLAN HQ\n"
+    .string "(FrankieDeckard's Lab)$"
 
 PalletTown_Text_PlayersHouse::
     .string "{PLAYER}'s house$"
