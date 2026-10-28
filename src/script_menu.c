@@ -309,6 +309,12 @@ static const struct MenuAction sMultichoiceList_Eeveelutions[] = {
     { gText_QuitLooking }
 };
 
+static const struct MenuAction sMultichoiceList_MomGvrResponse[] = {
+    { gText_MomChoice_YaVoy },
+    { gText_MomChoice_NoMeAcuerdoSueter },
+    { gText_MomChoice_NoMeAcuerdoQuienEres }
+};
+
 static const struct MenuAction sMultichoiceList_BikeShop[] = {
     { gText_Bicycle_Price },
     { gText_NoThanks }
@@ -568,6 +574,7 @@ static const struct MultichoiceListStruct sMultichoiceLists[] = {
     [MULTICHOICE_62]                                         = MULTICHOICE(sMultichoiceList_62),
     [MULTICHOICE_JOIN_OR_LEAD]                               = MULTICHOICE(sMultichoiceList_JoinOrLead),
     [MULTICHOICE_TRAINER_TOWER_MODE]                         = MULTICHOICE(sMultichoiceList_TrainerTowerMode),
+    [MULTICHOICE_MOM_GVR_RESPONSE]                           = MULTICHOICE(sMultichoiceList_MomGvrResponse),
 };
 
 // From Cool to Berries goes unused

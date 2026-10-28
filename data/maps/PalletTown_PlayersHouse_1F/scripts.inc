@@ -5,22 +5,39 @@ PalletTown_PlayersHouse_1F_EventScript_Mom::
 	lock
 	faceplayer
 	goto_if_set FLAG_BEAT_RIVAL_IN_OAKS_LAB, PalletTown_PlayersHouse_1F_EventScript_MomHeal
-	checkplayergender
-	call_if_eq VAR_RESULT, MALE, PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale
-	call_if_eq VAR_RESULT, FEMALE, PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale
+	msgbox PalletTown_PlayersHouse_1F_Text_MomGreeting
+	multichoice 0, 0, MULTICHOICE_MOM_GVR_RESPONSE, FALSE
+	switch VAR_RESULT
+	case 0, PalletTown_PlayersHouse_1F_EventScript_MomYaVoy
+	case 1, PalletTown_PlayersHouse_1F_EventScript_MomNoMeAcuerdoSueter
+	case 2, PalletTown_PlayersHouse_1F_EventScript_MomNoMeAcuerdoQuienEres
+	case 127, PalletTown_PlayersHouse_1F_EventScript_MomYaVoy
+	release
+	end
+
+PalletTown_PlayersHouse_1F_EventScript_MomYaVoy::
+	msgbox PalletTown_PlayersHouse_1F_Text_MomYaVoyResponse
 	closemessage
 	applymovement LOCALID_MOM, Common_Movement_FaceOriginalDirection
 	waitmovement 0
 	release
 	end
 
-PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouMale::
-	msgbox PalletTown_PlayersHouse_1F_Text_AllBoysLeaveOakLookingForYou
-	return
+PalletTown_PlayersHouse_1F_EventScript_MomNoMeAcuerdoSueter::
+	msgbox PalletTown_PlayersHouse_1F_Text_MomNoMeAcuerdoSueterResponse
+	closemessage
+	applymovement LOCALID_MOM, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
 
-PalletTown_PlayersHouse_1F_EventScript_MomOakLookingForYouFemale::
-	msgbox PalletTown_PlayersHouse_1F_Text_AllGirlsLeaveOakLookingForYou
-	return
+PalletTown_PlayersHouse_1F_EventScript_MomNoMeAcuerdoQuienEres::
+	msgbox PalletTown_PlayersHouse_1F_Text_MomNoMeAcuerdoQuienEresResponse
+	closemessage
+	applymovement LOCALID_MOM, Common_Movement_FaceOriginalDirection
+	waitmovement 0
+	release
+	end
 
 PalletTown_PlayersHouse_1F_EventScript_MomHeal::
 	msgbox PalletTown_PlayersHouse_1F_Text_YouShouldTakeQuickRest
