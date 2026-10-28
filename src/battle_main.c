@@ -1541,6 +1541,8 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
     u32 nameHash = 0;
     u32 personalityValue;
     u8 fixedIV;
+    u8 otIdType;
+    u32 fixedOtId;
     s32 i, j;
 
     if (trainerNum == TRAINER_SECRET_BASE)
@@ -1563,6 +1565,15 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
             for (j = 0; gTrainers[trainerNum].trainerName[j] != EOS; j++)
                 nameHash += gTrainers[trainerNum].trainerName[j];
 
+            otIdType = OT_ID_RANDOM_NO_SHINY;
+            fixedOtId = 0;
+
+            if (trainerNum == TRAINER_LEADER_LT_SURGE)
+            {
+                otIdType = OT_ID_PRESET;
+                fixedOtId = personalityValue;
+            }
+
             switch (gTrainers[trainerNum].partyFlags)
             {
             case 0:
@@ -1573,8 +1584,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
+                if (trainerNum == TRAINER_LEADER_LT_SURGE)
+                    fixedOtId = personalityValue;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, otIdType, fixedOtId);
                 break;
             }
             case F_TRAINER_PARTY_CUSTOM_MOVESET:
@@ -1585,8 +1598,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
+                if (trainerNum == TRAINER_LEADER_LT_SURGE)
+                    fixedOtId = personalityValue;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, otIdType, fixedOtId);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)
                 {
@@ -1603,8 +1618,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
+                if (trainerNum == TRAINER_LEADER_LT_SURGE)
+                    fixedOtId = personalityValue;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, otIdType, fixedOtId);
 
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
                 break;
@@ -1617,8 +1634,10 @@ static u8 CreateNPCTrainerParty(struct Pokemon *party, u16 trainerNum)
                     nameHash += gSpeciesNames[partyData[i].species][j];
 
                 personalityValue += nameHash << 8;
+                if (trainerNum == TRAINER_LEADER_LT_SURGE)
+                    fixedOtId = personalityValue;
                 fixedIV = partyData[i].iv * MAX_PER_STAT_IVS / 255;
-                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, OT_ID_RANDOM_NO_SHINY, 0);
+                CreateMon(&party[i], partyData[i].species, partyData[i].lvl, fixedIV, TRUE, personalityValue, otIdType, fixedOtId);
                 SetMonData(&party[i], MON_DATA_HELD_ITEM, &partyData[i].heldItem);
 
                 for (j = 0; j < MAX_MON_MOVES; j++)

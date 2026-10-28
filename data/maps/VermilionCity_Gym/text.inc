@@ -1,31 +1,37 @@
 VermilionCity_Gym_Text_LtSurgeIntro::
-    .string "Hey, kid! What do you think you're\n"
-    .string "doing here?\p"
-    .string "You won't live long in combat!\n"
-    .string "Not with your puny power!\p"
-    .string "I tell you, kid, electric POKéMON\n"
-    .string "saved me during the war!\p"
-    .string "They zapped my enemies into\n"
-    .string "paralysis!\p"
-    .string "The same as I'll do to you!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
+    .string "¡Qué onda, carnal! Bienvenido al gimnasio\n"
+    .string "más electrizante.\p"
+    .string "Oye, ¿te costó mucho el puzzle de los\n"
+    .string "botes de basura?\p"
+    .string "A mí la neta me dio risa. Pasaba por aquí,\n"
+    .string "le piqué al primer bote, ¡pum!, primer switch.\p"
+    .string "Le piqué al de al lado, ¡pum!, segundo\n"
+    .string "switch a la primera.\p"
+    .string "Facilito, carnal, regalado. ¿A poco a ti te\n"
+    .string "costó? No me digas que se te reseteó, güey…\p"
+    .string "En fin, así es la suerte. Y hablando de suerte…\n"
+    .string "¡mira nada más a mis POKéMON!\p"
+    .string "¡Todos doraditos, todos brillosos!\p"
+    .string "Esto es como abrir una caja gratis de L-Coins\n"
+    .string "y sacar una Doll de Baium de 3 estrellas a\l"
+    .string "la primera, carnal. ¡Pura suerte divina!\p"
+    .string "¡A ver si tu build chafa le gana a mis\n"
+    .string "Shinies!{PLAY_BGM}{MUS_ENCOUNTER_GYM_LEADER}$"
 
 VermilionCity_Gym_Text_LtSurgePostBattle::
-    .string "A little word of advice, kid!\p"
-    .string "Electricity is sure powerful!\p"
-    .string "But, it's useless against GROUND-\n"
-    .string "type POKéMON!$"
+    .string "Sigue tirando para adelante, carnal.\n"
+    .string "A ver si la suerte te dura tanto como\l"
+    .string "a mí.$"
 
 VermilionCity_Gym_Text_ExplainThunderBadgeTakeThis::
-    .string "The THUNDERBADGE cranks up your\n"
-    .string "POKéMON's SPEED!\p"
-    .string "It also lets your POKéMON FLY\n"
-    .string "lightning-quick anytime, kid!\p"
-    .string "You're special, kid!\n"
-    .string "Take this!$"
+    .string "Con la Medalla Trueno tus POKéMON tienen\n"
+    .string "más VELOCIDAD, carnal.\p"
+    .string "Y además puedes usar VUELO cuando quieras.\n"
+    .string "Toma esto también, te lo ganaste.$"
 
 VermilionCity_Gym_Text_ReceivedTM34FromLtSurge::
     .string "{PLAYER} received TM34\n"
-    .string "from LT. SURGE.$"
+    .string "from OMAR.$"
 
 VermilionCity_Gym_Text_ExplainTM34::
     .string "TM34 contains SHOCK WAVE!\p"
@@ -35,9 +41,11 @@ VermilionCity_Gym_Text_MakeRoomInYourBag::
     .string "Yo, kid, make room in your BAG!$"
 
 VermilionCity_Gym_Text_LtSurgeDefeat::
-    .string "Now that's a shocker!\p"
-    .string "You're the real deal, kid!\p"
-    .string "Fine, then, take the THUNDERBADGE!$"
+    .string "No mames, güey… qué mala vibra me tiraste.\p"
+    .string "Se me hace que me pegaste la saladera del\n"
+    .string "canario ese de la grúa.\p"
+    .string "En fin, te ganaste la Medalla Trueno.\n"
+    .string "Bien jugado, mi rey.$"
 
 VermilionCity_Gym_Text_TuckerIntro::
     .string "When I was in the Army, LT. SURGE\n"
@@ -103,13 +111,13 @@ VermilionCity_Gym_Text_GymGuyPostVictory::
 
 VermilionCity_Gym_Text_GymStatue::
     .string "VERMILION POKéMON GYM\n"
-    .string "LEADER: LT. SURGE\p"
+    .string "LEADER: OMAR (THUNDERAY)\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}$"
 
 VermilionCity_Gym_Text_GymStatuePlayerWon::
     .string "VERMILION POKéMON GYM\n"
-    .string "LEADER: LT. SURGE\p"
+    .string "LEADER: OMAR (THUNDERAY)\p"
     .string "WINNING TRAINERS:\n"
     .string "{RIVAL}, {PLAYER}$"
 
